@@ -1,119 +1,145 @@
-body {
-    font-family: 'Poppins', sans-serif;
+body, h1, h2, p, figure, ul, li, a {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #F9E0E0;  
+    color: #791111;
 }
 
 header {
-    background: linear-gradient(135deg, #4b6cb7, #182848);
-    color: white;
+    background-color: #E3A9B1; 
+    color: #fff;
     padding: 20px 0;
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 20px 20px;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5rem;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px;
+    background-color: #D2A0A1;  
+    border-radius: 10px;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+    font-size: 18px;
+    transition: transform 0.3s ease, color 0.3s ease; 
 }
 
 nav ul li a:hover {
-    color: #b631a6;
+    transform: scale(1.1);
+    color: #f4f4f4; 
 }
 
-
 main {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 20px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 0 20px;
+    box-shadow: 50px 60px 80px rgba(43, 42, 42, 0.2);
+}
+
+article {
+    margin-bottom: 40px;
 }
 
 h2 {
-    color: #4b6cb7;
-    border-bottom: 3px solid #182848;
-    padding-bottom: 5px;
+    color: #D2465C;  
+    font-size: 28px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-
 section {
-    margin-bottom: 340px;
+    margin-bottom: 30px;
 }
 
 figure {
     text-align: center;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 figure img {
-    width: 950px;
-    max-width: 350px;
-    border-radius: 20px;
-    box-shadow: 9px 4px 9px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; 
+}
+
+figure img:hover {
+    transform: scale(1.1); 
 }
 
 figcaption {
     font-weight: bold;
     margin-top: 10px;
-    color: #555;
+    font-size: 18px;
+    color: #8B3A3A;
 }
 
-
-.contact ul {
-    list-style: none;
-    padding: 0;
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    text-align: justify;
+    margin-top: 10px;
 }
 
-.contact ul li {
-    background: #445b92;
-    color: white;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
+hr {
+    border: 1px solid #ddd;
+    margin: 30px 0;
 }
-
-.contact ul li a {
-    color: #ee80e0;
-    text-decoration: none;
-}
-
 
 footer {
     text-align: center;
-    background: #182848;
+    background-color: #D2A0A1; 
     color: white;
-    padding: 15px 0;
-    margin-top: 20px;
-    font-weight: bold;
+    padding: 10px 0;
+    border-radius: 20px 20px 0 0;
 }
 
 footer a {
-    color: #f063bf;
+    text-align: center;
+    color: white;
     text-decoration: none;
 }
 
 footer a:hover {
     text-decoration: underline;
+}
+
+.contact ul {
+    display: inline-block;
+    text-align: left;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
 }
